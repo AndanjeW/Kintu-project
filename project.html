@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kintu Paperback</title>
+    <style>
+        h1{
+            text-align: center;
+            color: #de2425;
+        }
+        h2{
+            text-align: center;
+            font-size: 15px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-height: 100%;
+            border-radius: 10px;
+        }
+        p {
+            line-height: 1.5;
+            text-align: center;
+            font-size: 10px;
+        
+        }
+        
+        button{
+               
+            display: block;
+            margin: 0 auto;
+            background: #de2425;
+            color: white;
+            font-size: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgba(0,  0, 0, 0.3);
+            transition: all 200ms ease-in-out;
+           
+        }
+        button:hover{
+            opacity: 0.9;
+            cursor: pointer;
+            
+        }
+        .content{
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 60px;
+            background: linear-gradient(to right, #e6e0ce, #be8d67);
+        }
+
+        .cover{
+            font-weight: lighter;
+            font-size: 28px;
+            
+        }
+
+        .container{
+            width: 320px;
+            margin: 0 auto;
+            
+    
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+    <h1>Kintu <span class="cover">(Paperback)</span></h1>
+    <h2>by <a href="https://jennifermakumbi.net/" target="_blank"> <em> Jennifer Nansubuga Makumbi</em></a> </h2>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/030/061/original/kintu-novel-2.jpg?1648212687" width="300"  alt="Kintu Cover"/>
+    <p>
+        <div class="container">First published in Kenya in 2014 to critical and popular acclaim, 
+        Kintu is a modern classic, 
+        a multilayered narrative that reimagines the history of Uganda through the cursed bloodline of the Kintu clan.
+        <br> 
+        <br> 
+        Divided into six sections, the novel begins in 1750, 
+        when Kintu Kidda sets out for the capital to pledge allegiance to the new leader of the Buganda Kingdom. 
+        Along the way, he unleashes a curse that will plague his family for generations. 
+    </div>
+    </p>
+    <button>
+        	
+    &#128073; Get a Copy
+    </button>
+    <br>
+    <hr>
+
+    <p>This page was built by <a href="https://www.shecodesfoundation.org/candidates/andanje-wobanda-kenyan" target="_blank">Andanje Wobanda</a></p>
+</div>
+<script>
+    function buy () {
+        let name = prompt("What is your name")
+        let bookNumber = prompt("How many books do you want")
+
+        if (bookNumber >=1) {
+        alert("Thank you " + name + "! " + "For buying " + bookNumber + " books");
+    } else {
+        alert("Sorry " + name + "! " + "You can't make " + bookNumber + " purchases");
+    }
+ }
+   let getCopyButton = document.querySelector("button");
+   getCopyButton.addEventListener("click", buy);
+</script>
+</body>
+</html>
